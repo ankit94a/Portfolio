@@ -467,26 +467,36 @@ b, strong {
 .dark-mode .icon-box{
   box-shadow: rgba(244, 244, 244, 0.895) 1.95px 1.95px 2.6px;
 }
-.project-img{
+.skill-container{
   display: flex;
-  align-items: center;
-  width: 60% !important;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 
 .icon-box{
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 10px;
   height: 100px;
-  width: 115px;
+  /* small device maintain height */
+  width: 125px;
   transition: transform 0.8s;
-}
+} 
 .icon-box:hover{
   transform: rotateY(180deg);
 }
+
+.project-img{
+  height: 90vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
@@ -537,6 +547,10 @@ b, strong {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
+  .project-img{
+    margin-top: 50px;
+    height: auto;
+  }
 }
 @media (max-width: 580px) {
 	.animated-info {
@@ -562,6 +576,9 @@ b, strong {
   .timeline-info small {
     display: block;
     margin: 10px 0 0 0;
+  }
+  .project-img{
+    height: auto;
   }
 }
 @media (max-width: 320px) {
