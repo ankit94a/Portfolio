@@ -111,7 +111,7 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 260px;
+  min-width: 270px;
   position: relative;
 }
 
@@ -297,6 +297,9 @@ b, strong {
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #ffc200;
+}
+.dark-mode .contact{
+  color: rgba(255, 255, 255, 0.8);
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
@@ -551,10 +554,19 @@ b, strong {
     margin-top: 50px;
     height: auto;
   }
+ 
 }
+.coming-soon{
+  padding: 0 10px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+
 @media (max-width: 580px) {
 	.animated-info {
-		min-width: 200px;
+		min-width: 210px;
 	}
   .animated-item {
     font-size: 30px;
